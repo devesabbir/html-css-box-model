@@ -21,9 +21,94 @@
     <!-- Poppins font cdn -->
     <title>First App</title>
     <link rel="stylesheet" href="/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        background-color: #333333;
+        width: 550px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 20%;
+      }
+
+      .center {
+        position: relative;
+        top: 30%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #009999;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 200px;
+      }
+
+      .item {
+        position: absolute;
+        width: 125px;
+        height: 130px;
+        background-color: #00cc99;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+      }
+      .div-1 {
+        top: -70%;
+        left: 20%;
+      }
+
+      .div-2 {
+        right: -50%;
+        top: -60%;
+      }
+
+      .div-3 {
+        right: -70%;
+        top: 15%;
+      }
+      .div-4 {
+        right: -50%;
+        bottom: -60%;
+      }
+
+      .div-5 {
+        left: 20%;
+        bottom: -70%;
+      }
+
+      .div-6 {
+        left: -50%;
+        bottom: -60%;
+      }
+
+      .div-7 {
+        left: -70%;
+        top: 15%;
+      }
+
+      .div-8 {
+        left: -50%;
+        top: -60%;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is Heading Tag This is dfd</h1>
-    <h2>This is Heading Tag 2</h2>
+    <div class="container">
+      <div class="center">
+        <h1>center div</h1>
+        <div class="item div-1">1</div>
+        <div class="item div-2">2</div>
+        <div class="item div-3">3</div>
+        <div class="item div-4">4</div>
+        <div class="item div-5">5</div>
+        <div class="item div-6">6</div>
+        <div class="item div-7">7</div>
+        <div class="item div-8">8</div>
+      </div>
+    </div>
   </body>
 </html>
