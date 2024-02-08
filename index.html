@@ -20,10 +20,108 @@
     />
     <!-- Poppins font cdn -->
     <title>First App</title>
-    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: purple;
+        padding: 20px 10px;
+      }
+
+      .header ul li {
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+      }
+
+      .header ul li a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: 0.4s;
+        border-radius: 5px;
+      }
+
+      .header ul li a:hover {
+        background-color: #fff;
+        color: purple;
+      }
+
+      .header ul li ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: purple;
+        width: 200px;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      /* dropdown menu hover li */
+      .header ul li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .header ul li ul li {
+        display: block;
+        margin: 0 0px;
+      }
+
+      .header ul li ul li a {
+        display: block;
+      }
+
+      p::selection {
+        color: orange;
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is Heading Tag This is dfd</h1>
-    <h2>This is Heading Tag 2</h2>
+    <div class="header">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">About</a>
+          <ul>
+            <li><a href="">Blog-1</a></li>
+            <li><a href="">Blog-2</a></li>
+            <li><a href="">Blog-3</a></li>
+            <li><a href="">Blog-4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+          <ul>
+            <li><a href="">Blog-1</a></li>
+            <li><a href="">Blog-2</a></li>
+            <li><a href="">Blog-3</a></li>
+            <li><a href="">Blog-4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      tempora cum totam deserunt eum voluptatem fuga officia, doloribus illo
+      cupiditate voluptate beatae ipsum deleniti doloremque error iure. Quos,
+      quaerat minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Dignissimos tempora cum totam deserunt eum voluptatem fuga officia,
+      doloribus illo cupiditate voluptate beatae ipsum deleniti doloremque error
+      iure. Quos, quaerat minus. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Dignissimos tempora cum totam deserunt eum voluptatem
+      fuga officia, doloribus illo cupiditate voluptate beatae ipsum deleniti
+      doloremque error iure. Quos, quaerat minus.
+    </p>
   </body>
 </html>
