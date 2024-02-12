@@ -3,25 +3,101 @@
   padding: 0;
 }
 
-body {
-  background-color: bisque;
+/* red */
+/* #ED4C67 */
+/* purple */
+/* #1B1464 */
+/* green */
+/* #006266 */
+/* orange */
+/* #F79F1F */
+/* white */
+/* #ffffff */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h1 {
-  background-color: blue;
-  color: white;
-  margin: 10px 20px 30px 15px;
+a,
+button,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.header {
+  background-color: #1b1464;
+  padding: 20px 0;
+}
+.header .logo {
+  display: inline-block;
+  width: 200px;
+}
+
+.header .logo .circle-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header .logo img {
+  display: block;
+  width: 150px;
+}
+
+.header .menu {
+  display: inline-block;
+  width: 700px;
+  text-align: right;
+}
+
+.header .menu ul {
+  position: relative;
+  top: -22px;
+  right: 0;
+}
+
+.header .menu ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.hero-section {
+}
+.hero-section .hero-content {
+}
+
+.about-section {
+  background-color: #006266;
+  padding: 60px 0;
+}
+.about-section .about-left {
+  width: 300px;
+  display: inline-block;
+}
+
+.about-section .about-right {
+  width: 600px;
+  display: inline-block;
+}
+
+h2::before {
+  content: "Before";
+  color: red;
+  background-color: aliceblue;
+}
+
+h2::after {
+  content: "";
+  color: orange;
+  background-color: aliceblue;
   padding: 20px;
-  padding-left: 5px;
-  padding-top: 10px;
-}
-
-h2 {
-  background-color: blueviolet;
-  color: white;
-  padding: 30px;
-  margin: 0 30px;
-  border-left: 5px solid red !important;
-  border: 20px solid white;
-  border-radius: 10px 50px 20px 5px;
 }
